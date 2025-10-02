@@ -3,6 +3,7 @@
   <head> 
     <meta charset="UTF-8" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Simple Web Page</title> <!-- Link to the external CSS file --> 
     <link rel="stylesheet" href="styles.css" /> 
   </head> 
@@ -10,16 +11,54 @@
     <header> 
       <h1>Welcome to My Simple Web Page</h1> 
     </header> 
-    <nav> 
-      <ul> 
-        <li><a href="https://breo.beds.ac.uk#home">Home</a></li> 
-        <li><a href="https://breo.beds.ac.uk#about">About</a></li> 
-        <li><a href="https://breo.beds.ac.uk#contact">Contact</a></li> 
-      </ul> 
-    </nav> 
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Navbar</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+     <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+     
+
+      </ul>
+      <form class="d-flex" role="search">
+  
+        <button class="btn btn-primary" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    
+<div class="container">
     <section id="home"> 
-      <h2>Home Section</h2> 
-      <p>This is a simple homepage section with some text. You can add more content here.</p> 
+
+      <div class="row align-items-center" style="padding: 15px;">
+    <div class="col p-10">
+       <h2 class="myheading">Home Section of a simple homepage</h2> 
+      <p>This is a simple homepage section with some text. You can add more content here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto officia doloribus perferendis cumque minima, ipsa magni ipsam quisquam dicta autem.</p> 
+
+      <div class="input-group mb-3" >
+  <input type="email" class="form-control p-2" placeholder="Join Waiting List" aria-label="Recipient’s username" aria-describedby="button-addon2">
+  <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+</div>
+    </div>
+
+    <div class="col p-10">
+     <img src="https://images.unsplash.com/photo-1619410283995-43d9134e7656?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 100%; max-height: 400px; object-fit: cover; padding: 1px; border-radius: 5px;">
+  </div>
+
+
+    
     </section> 
     <section id="about"> 
       <h2>About Section</h2> 
@@ -29,11 +68,15 @@
       <h2>Contact Section</h2> 
       <p>Feel free to contact me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p> 
     </section> 
+
+</div>
+
     <footer> 
 
 
       
       <p>© 2024 My Simple Web Page</p> 
     </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
